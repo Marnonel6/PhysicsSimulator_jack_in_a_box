@@ -3,6 +3,8 @@ Machine Dynamics Final Project
 
 [Screencast from 12-01-2022 06:48:27 PM.webm](https://user-images.githubusercontent.com/60977336/205214226-b14207b7-afa2-44e5-856c-bc6335cf23ab.webm)
 
+![frames](https://user-images.githubusercontent.com/60977336/205214428-5d44d9da-ca58-4e47-ba6a-1420a1509ee1.jpg)
+
 
 
 The project guidelines are below.
