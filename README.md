@@ -1,6 +1,8 @@
 # PhysicsSimulator_jack_in_a_box
 Machine Dynamics Final Project
 
+[Screencast from 12-01-2022 06:48:27 PM.webm](https://user-images.githubusercontent.com/60977336/205214226-b14207b7-afa2-44e5-856c-bc6335cf23ab.webm)
+
 
 
 The project guidelines are below.
