@@ -11,7 +11,7 @@ A physics simulator was programmed in Python for a jack in a rotating box.
 
 `You should include a drawing of the system you are modeling that includes all the frames you are using, with frame labels. In addition to the drawing, you should include all of the rigid body transformations you are using between the frames. These frames and their labels should be clearly identifiable in your code.`
 
-![frames](https://user-images.githubusercontent.com/60977336/205214428-5d44d9da-ca58-4e47-ba6a-1420a1509ee1.jpg)
+![jack_frames](https://user-images.githubusercontent.com/60977336/206024511-a20bb4dd-8586-45b8-900b-df8227b8c6a0.jpg)
 
 # Rigid body transformations: <br />
 `Jack and Box relative to world:` <br />
