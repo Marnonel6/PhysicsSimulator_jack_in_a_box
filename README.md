@@ -41,9 +41,9 @@ g_wj1, g_wj2, g_wj3, g_wj4
 `Using the drawing and the rigid body transformations, you should say in writing how you calculate the Euler-Lagrange equations, the constraints, the external forces and impact update laws.`
 # Euler-Lagrange equations
 Calculated the rigid body transformations between the box and jack frame (g_wb, g_wj) respectively relative to the world frame.
-Used the calculated transformations to calculte the body velocity of the jack and the box.
+Used the calculated transformations to calculate the body velocity of the jack and the box.
 Calculated the inertia of the jack as four point masses and the box as four bars.
-Then the inertia tensor, kinetic & potential energy, lagrangian and the Euler lagrangian was calculated.
+Then the inertia tensor, kinetic & potential energy, Lagrangian and the Euler Lagrangian was calculated.
 
 # Constraints
 The rigid body transformations where calculated between each wall and the four point masses of the jack.
@@ -60,7 +60,7 @@ mass 1 of the jack in the y-coordinate.
 # External forces
 A force in the y-axis was applied to the box to offset gravity and keep the box at a relatively constant y.
 The value of the force is equal to the weight of the box plus 100[N] to negate the effects of the jack 
-impacting with the box. This addition value was abtained through experimantation.
+impacting with the box. This addition value was obtained through experimentation.
 A torque was applied to the box to rotate the box and make the jack bounce around. The torque is a sine wave
 with an amplitude equal to 80% the weight of the box.
 
@@ -70,16 +70,17 @@ and if the sign changes then an impact occurred. This returns the impact index o
 the jack the impact occurred. The impact update function is them called with the specific impact equation. The
 initial or tau^- conditions is then substituted into the impact equations. The impact equations are then solved for
 the tau^+ instance. Lambda is then checked and when lambda is very small the solution is considered as false and the
-next solution is considered. When the lambda is not small that sulution is then passed back as the new parameters at
+next solution is considered. When the lambda is not small that solution is then passed back as the new parameters at
 tau^+.
 
 `If your code works, you should describe in words what happens in the simulation and why you think it is correct (e.g., at a high level, describe why you think the behavior is reasonable or not). If your code works, this can be the end of your write-up. If your code works, your entire write-up will likely just be a few paragraphs.`
-The jack is started at a angle when dropped. It then impacts with the box while the box rotates couter-clockwise.
+The jack is started at a angle when dropped. It then impacts with the box while the box rotates counter-clockwise.
 The jack bounces off at an angle as the box has already started to rotate before the jack impacts with the box.
 The jacks bounce angles seems correct considering the angle of the box. The jack also starts to rotate after impact
-as the jack was dropped at angle relatice to the horizontal axis. The rotation is slow as the angle is small. The 
-jack then goes on to impact with the box in a resonable manner, where when the box starts to rotate faster then the
+as the jack was dropped at angle relative to the horizontal axis. The rotation is slow as the angle is small. The 
+jack then goes on to impact with the box in a reasonable manner, where when the box starts to rotate faster then the
 impact has more energy and the jack bounces off with more energy and start spinning faster when the jack impacts in the
 correct orientation.
+
 
 
