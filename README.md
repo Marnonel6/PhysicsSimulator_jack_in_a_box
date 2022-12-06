@@ -3,17 +3,14 @@ Machine Dynamics Final Project
 
 [Screencast from 12-01-2022 06:48:27 PM.webm](https://user-images.githubusercontent.com/60977336/205214226-b14207b7-afa2-44e5-856c-bc6335cf23ab.webm)
 
-![frames](https://user-images.githubusercontent.com/60977336/205214428-5d44d9da-ca58-4e47-ba6a-1420a1509ee1.jpg)
-
-
-
 The project guidelines are below.
 
 `You should include a brief description of what you originally proposed and what changes you needed to make to your original proposal (and why you made them).If you chose the default project, you can simply state that you did so.`
 A physics simulator was programmed in Python for a jack in a rotating box.
 
 `You should include a drawing of the system you are modeling that includes all the frames you are using, with frame labels. In addition to the drawing, you should include all of the rigid body transformations you are using between the frames. These frames and their labels should be clearly identifiable in your code.`
-TODO: Add Picture of frames
+
+![frames](https://user-images.githubusercontent.com/60977336/205214428-5d44d9da-ca58-4e47-ba6a-1420a1509ee1.jpg)
 
 Rigid body transformations:
 # Jack and Box relative to world
