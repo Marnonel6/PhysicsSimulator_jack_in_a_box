@@ -14,40 +14,42 @@ A physics simulator was programmed in Python for a jack in a rotating box.
 ![frames](https://user-images.githubusercontent.com/60977336/205214428-5d44d9da-ca58-4e47-ba6a-1420a1509ee1.jpg)
 
 # Rigid body transformations:
-Jack and Box relative to world
+`Jack and Box relative to world:`
 g_w_b - Center Box relative to world
 g_w_j - Center Jack relative to world
 
-Box
+`Box:`
 g_b_b1 - Right box wall relative to box center
 g_b_b3 - Left box wall relative to box center
 g_b_b2 - Lower box wall relative to box center
 g_b_b4 - Lower box wall relative to box center
 
-Jack
+`Jack:`
 g_j_j1 - Right jack corner relative to jack center
 g_j_j3 - Left jack corner relative to jack center
 g_j_j2 - Lower jack corner relative to jack center
 g_j_j4 - Lower jack corner relative to jack center
 
-Reassign
+`Reassign:`
 g_wb = g_w_b
 g_wj = g_w_j
-# Each box wall relative to the world frame
+
+`Each box wall relative to the world frame:`
 g_wb1, g_wb2, g_wb3, g_wb4
-# Each jack corner relative to the world frame
+
+`Each jack corner relative to the world frame:`
 g_wj1, g_wj2, g_wj3, g_wj4
 
 
 `Using the drawing and the rigid body transformations, you should say in writing how you calculate the Euler-Lagrange equations, the constraints, the external forces and impact update laws.`
 
-Euler-Lagrange equations:
+`Euler-Lagrange equations:`
 Calculated the rigid body transformations between the box and jack frame (g_wb, g_wj) respectively relative to the world frame.
 Used the calculated transformations to calculate the body velocity of the jack and the box.
 Calculated the inertia of the jack as four point masses and the box as four bars.
 Then the inertia tensor, kinetic & potential energy, Lagrangian and the Euler Lagrangian was calculated.
 
-Constraints:
+`Constraints:`
 The rigid body transformations where calculated between each wall and the four point masses of the jack.
 This provided the 16 impact conditions that where possible in the simulation. The left/(3) and right/(1) wall of
 the box is in the x-axis and thus the x translation value was extracted from the rigid body transformations
@@ -59,14 +61,14 @@ translation value was extracted from the rigid body transformations as the const
 - phi_b2_j1 = (g_b2j1[1,3].subs(dummy_var)): Displays the impact condition between wall 2 and corner/point
 mass 1 of the jack in the y-coordinate.
 
-External forces:
+`External forces:`
 A force in the y-axis was applied to the box to offset gravity and keep the box at a relatively constant y.
 The value of the force is equal to the weight of the box plus 100[N] to negate the effects of the jack 
 impacting with the box. This addition value was obtained through experimentation.
 A torque was applied to the box to rotate the box and make the jack bounce around. The torque is a sine wave
 with an amplitude equal to 80% the weight of the box.
 
-Impact update laws:
+`Impact update laws:`
 if (phi_val[i] > -threshold) and (phi_val[i] < threshold): This checks if the impact condition's sign is changing
 and if the sign changes then an impact occurred. This returns the impact index of between which wall and corner of
 the jack the impact occurred. The impact update function is them called with the specific impact equation. The
