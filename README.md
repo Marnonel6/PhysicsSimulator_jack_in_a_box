@@ -13,10 +13,10 @@ A physics simulator was programmed in Python for a jack in a rotating box.
 
 ![frames](https://user-images.githubusercontent.com/60977336/205214428-5d44d9da-ca58-4e47-ba6a-1420a1509ee1.jpg)
 
-# Rigid body transformations:
-`Jack and Box relative to world:`
-g_w_b - Center Box relative to world
-g_w_j - Center Jack relative to world
+# Rigid body transformations: \n
+`Jack and Box relative to world:` \n 
+g_w_b - Center Box relative to world \n
+g_w_j - Center Jack relative to world \n
 
 `Box:`
 g_b_b1 - Right box wall relative to box center
